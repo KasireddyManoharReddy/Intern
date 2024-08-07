@@ -1,0 +1,169 @@
+/* WebcamCapture.css */
+
+
+/* Container for the whole component */
+
+.webcam-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Title style */
+
+.webcam-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* Flex container for the webcam and photos */
+
+.webcam-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    /* Space between the webcam feed and photo gallery */
+}
+
+
+/* Webcam feed and capture button container */
+
+.webcam-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* Make it flexible to adapt with the photos area */
+}
+
+
+/* Button styles */
+
+.webcam-button,
+.toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.webcam-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.webcam-button:hover:not(:disabled),
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Photo gallery styles */
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    /* Space between photos */
+    flex: 1;
+    /* Make it flexible to share space with the webcam feed */
+    padding: 10px;
+    max-width: 50%;
+    /* Limit the width to half of the container */
+    overflow-y: auto;
+    /* Add vertical scroll if content overflows */
+    border-left: 1px solid #ddd;
+    /* Add a divider line between webcam feed and photos */
+}
+
+
+/* Each photo container */
+
+.photo-container {
+    position: relative;
+    margin: 10px;
+    width: 150px;
+    /* Increase the width of the photos */
+    height: 150px;
+    /* Maintain aspect ratio for square photos */
+}
+
+
+/* Photo styles */
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Delete button on each photo */
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
+
+/* faceRegister.css */
+
+.save-button {
+    background-color: #4caf50;
+    /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* Fixed padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 200px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
+}
+
+.save-button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}

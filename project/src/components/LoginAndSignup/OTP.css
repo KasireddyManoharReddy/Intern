@@ -1,0 +1,81 @@
+/* src/OtpGenerator.css */
+
+.otp-generator {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    /*background: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);*/
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.otp-generator h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.otp-generator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.otp-generator label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.otp-generator input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.otp-generator button {
+    padding: 10px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    align-self: center;
+}
+
+.otp-generator button:hover {
+    background-color: #005ea8;
+}
+
+.otp-generator p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.otp-generator .error {
+    color: red;
+    margin-top: 10px;
+}
+
+.otp-generator .success {
+    color: black;
+    margin-top: 10px;
+}
+
+.otp-generator .otp-verification {
+    margin-top: 20px;
+}
+
+.otp-generator .otp-verification h3 {
+    margin-bottom: 10px;
+}

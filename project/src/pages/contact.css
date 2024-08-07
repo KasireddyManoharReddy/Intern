@@ -1,0 +1,120 @@
+/*.contact-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-page h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+.professor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.professor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.professor-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.professor-card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.professor-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.professor-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.professor-card a:hover {
+    text-decoration: underline;
+}*/
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Header styles */
+
+.contact-container h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph styles */
+
+.contact-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Contact info section */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Individual contact items */
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contact-item i {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #3498db;
+    /* Icon color */
+}
+
+.contact-item h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    margin: 0;
+}

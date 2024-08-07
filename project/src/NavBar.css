@@ -1,0 +1,42 @@
+.taskbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+}
+
+.site-name {
+    font-size: 2rem;
+}
+
+.taskbar ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.taskbar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.taskbar li:hover {
+    background-color: #777;
+    border-radius: 10vh;
+}
+
+.taskbar li svg {
+    margin-right: 0.5rem;
+}
